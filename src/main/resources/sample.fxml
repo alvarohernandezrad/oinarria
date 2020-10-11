@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<GridPane fx:controller="ehu.isad.controllers.Controller"
-          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
-</GridPane>
 
-
-
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ehu.isad.controllers.Controller">
+<children>
+    <TextField fx:id="txtErabiltzailea" layoutX="300.0" layoutY="144.0" />
+    <TextField fx:id="txtPasahitza" layoutX="300.0" layoutY="187.0" />
+    <Label fx:id="lblErabiltzailea" layoutX="150.0" layoutY="149.0" text="Erabiltzailea" />
+    <Label fx:id="lblPasahitza" layoutX="150.0" layoutY="192.0" text="Pasahitza" />
+    <Button fx:id="btnKautotu" layoutX="269.0" layoutY="267.0" mnemonicParsing="false" onAction="#onClick" text="Kautotu" />
+</children>
+</AnchorPane>
